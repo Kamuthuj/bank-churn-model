@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 
 
-model = joblib.load("best_model1.pkl")
+model = joblib.load('best_model1.pkl')
 
 
 st.title("Bank Customer Churn Prediction App")
@@ -19,7 +19,7 @@ num_of_products = st.selectbox("Number of Products", [1, 2, 3, 4])
 has_credit_card = st.selectbox("Has Credit Card", [0, 1])
 is_active_member = st.selectbox("Is Active Member", [0, 1])
 estimated_salary = st.number_input("Estimated Salary", min_value=0.0, max_value=300000.0, value=50000.0, step=100.0)
-geography = st.selectbox("Geography", ["France", "Germany", "Spain"])
+geography = st.selectbox("Geography", ["Kenya", "Uganda", "Tanzania"])
 gender = st.selectbox("Gender", ["Female", "Male"])
 
 
